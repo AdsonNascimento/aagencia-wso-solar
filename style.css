@@ -22,6 +22,22 @@ html {
     font-size: 62.5%; /* tamanho padrão do navegador vira 10px*/
 }
 
+:root {
+    --swiper-theme-color: var(--laranja-3);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--laranja-3);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 1rem;
+}
+
 main,
 header {
     overflow-x: hidden;
@@ -375,6 +391,14 @@ header {
 }
 
 @media (max-width: 900px) {
+    #capa .container-capa {
+        width: 55%;
+    }
+
+    #capa .card-capa {
+        right: 5%;
+    }
+
     #historia .story {
         width: 47.5rem;
         height: 40rem;
@@ -400,6 +424,25 @@ header {
 }
 
 @media (max-width: 700px) {
+    #header .elemento-1 {
+        max-width: 25rem;
+        top: -13rem;
+    }
+
+    #capa .container-capa {
+        width: 100%;
+    }
+
+    #capa .card-capa {
+        right: 5%;
+    }
+
+    #capa .container-capa div {
+        position: absolute;
+        left: 20%;
+        top: 10%;
+    }
+
     #servicos .item-service {
         font-size: 1.5rem;
         gap: 2rem;
@@ -468,7 +511,6 @@ header {
 }
 
 @media (max-width: 500px) {
-
     #servicos .container-service {
         flex-direction: column;
         gap: 2rem;
@@ -507,18 +549,13 @@ header {
     
     #historia .swiper {
         width: 100vw;
-        margin-left: -2.3rem;
+        margin-left: -1.9rem;
     }
 
     #historia .story {
         width: 80vw;
         height: 40rem;
         margin-bottom: -36rem;
-    }
-
-    #historia .swiper-button-next,
-    #historia .swiper-button-prev {
-        display: none;
     }
 
     .swiper-pagination {
@@ -529,8 +566,32 @@ header {
         max-width: 25rem;
         align-self: center;
     }
+    
+    #depoimentos .swiper-slide {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+    }
 
-    #historia .swiper-slide p {
+    #depoimentos .container-swiper {
+        width: 100%;
+    }
+
+    #depoimentos .swiper-slide p {
+        font-size: 1.75rem;
+        text-align: justify;
+    }
+    
+    #depoimentos .swiper-button-next,
+    #depoimentos .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #sobre .img-sobre img {
         width: 100%;
     }
 }

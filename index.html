@@ -129,8 +129,6 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-
 
                     </div>
 
@@ -196,7 +194,9 @@
                         </div>
 
                         <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>                        
+                        <div class="swiper-button-prev"></div>   
+                        <div class="swiper-pagination"></div>
+
                     </div>
                    
                 </div>
@@ -211,25 +211,25 @@
         <ul>
             <li>
                 <a target="_blank" href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+venho+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es">
-                    <img src="./assets/icon-whatsapp.png" alt="">
+                    <img src="./assets/icon-whatsapp.png" alt="Selecione para entrar em contato conosco via whatsapp">
                     +55 (84) 9 9983-0108
                 </a>
             </li>
             <li>
                 <a href="tel:+558432114401">
-                    <img src="./assets/icon-telefone.png" alt="">
+                    <img src="./assets/icon-telefone.png" alt="Selecione para entrar em contato conosco via telefone">
                     +55 (84) 3211-4401
                 </a>
             </li>
             <li>
                 <a target="_blank">
-                    <img src="./assets/icon-emil.png" alt="">
+                    <img src="./assets/icon-emil.png" alt="Entre en contato pelo nosso e-mail">
                     wso@grupowso.com.br
                 </a>
             </li>
             <li>
                 <a target="_blank" href="https://goo.gl/maps/nm32izmVogd2ywYV9">
-                    <img src="./assets/icon-pin.png" alt="">
+                    <img src="./assets/icon-pin.png" alt="Nosso endereços">
                     Rua dos Tororós, 1885 - Lagoa Nova, Natal - RN, 59054-550
                 </a>
             </li>
@@ -241,22 +241,18 @@
 
     <!-- Initialize Swiper -->
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
     </script>
 </body>
 </html>
