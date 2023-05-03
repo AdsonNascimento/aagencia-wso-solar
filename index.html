@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energia solar - WSO Solar</title>
-    <link rel="shortcut icon" href="./assets/logo-icon.png" type="image/x-icon">
-
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./assets/logo-icon.svg" type="image/x-icon">
+    <meta 
+        name="description"
+        content="A WSO Solar oferece a solução que você busca para a instalação do seu sistema de energia fotovoltaica. Conte com nossa experiência em energia solar para economizar na sua conta de luz com  sistemas fotovoltaicos de alta qualidade em sua casa ou empresa."
+    >
 
     <!-- styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" media="print" onload="this.media='all'"  />
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '4514615098662804');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=4514615098662804&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <meta name="facebook-domain-verification" content="i4xhkze5b450va15n70sc4mit0m6s5" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WPTQQ9F');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPTQQ9F" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
 </head>
+
 <body>
     <header id="header">
         <nav>
             <a href="#">
-                <img src="./assets/logo.png" alt="Logo WSO Solar">
+                <img src="./assets/logo.svg" alt="Logo WSO Solar">
             </a>
 
-            <img src="./assets/selos.png" alt="Selos WEG e APER de qualidade">
-            <img src="./assets/elementor-1.png" class="elemento-1">
+            <img src="./assets/selos.svg" alt="Selos WEG e APER de qualidade">
+            <img src="./assets/elementor-1.svg" class="elemento-1">
         </nav>
     </header>
 
@@ -40,9 +88,16 @@
             <div class="card-capa">
                 <p>Faça agora a sua simulação. <br>É rápido e de graça!</p>
 
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+Gostaria+de+realizar+uma+simula%C3%A7%C3%A3o.">PEDIR SIMULAÇÃO!</a>
+                <a class="btn-default" target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+Gostaria+de+realizar+uma+simula%C3%A7%C3%A3o.">PEDIR
+                    SIMULAÇÃO!</a>
             </div>
         </section>
+
+        <a class="btn-flut" target="_blank"
+            href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+Gostaria+de+realizar+uma+simula%C3%A7%C3%A3o.">
+            <img src="./assets/icon-whatsapp.svg" alt="entre em contato conosco via whatsapp">
+        </a>
 
         <section id="servicos">
             <div class="align-container">
@@ -51,21 +106,28 @@
                 <div class="container-service">
 
                     <a href="#" class="item-service">
-                        <img src="./assets/icon-service-01.png" alt="">
+                        <img src="./assets/icon-service-01.svg"
+                            alt="icone de representação para o serviço de elaboração de projetos foto voltaicos">
 
-                        <h2>Serviços</h2>
+                        <h2>Elaboração de projetos</h2>
+                        <!--<p></p>-->
                     </a>
 
                     <a href="#" class="item-service">
-                        <img src="./assets/icon-service-01.png" alt="">
+                        <img src="./assets/icon-service-02.svg"
+                            alt="icone de representação para o serviço de Instalação de sistemas fotovoltaicos">
 
-                        <h2>Serviços</h2>
+                        <h2>Instalação de sistemas fotovoltaicos</h2>
+                        <!--<p></p>-->
+                    </a>
+
                     </a>
 
                     <a href="#" class="item-service">
-                        <img src="./assets/icon-service-01.png" alt="">
+                        <img src="./assets/icon-service-03.svg" alt="Instalação de sistemas fotovoltaicos">
 
-                        <h2>Serviços</h2>
+                        <h2>Orçamentos</h2>
+                        <!--<p></p>-->
                     </a>
 
                 </div>
@@ -73,23 +135,35 @@
         </section>
 
         <section id="tec">
-            <div class="align-container">               
+            <div class="align-container">
                 <div class="container-tec">
                     <div class="text-tec">
                         <h2>TECNOLOGIA</h2>
-                       
+
                         <p>
-                            Trabalhar com melhores fornecedores, equipamentos e tecnologia influencia diretamente no resultado final do nosso serviço. Por esse motivo, o Grupo WSO é integrador oficial da <strong>WEG Solar</strong> - maior integradora e fornecedora de materiais para energia solar e autoridade em geração de energia solar no Brasil.
+                            Trabalhar com melhores fornecedores, equipamentos e tecnologia influencia diretamente no
+                            resultado final do nosso serviço. Por esse motivo, o Grupo WSO é integrador oficial da
+                            <strong>WEG Solar</strong> - maior integradora e fornecedora de materiais para energia solar
+                            e autoridade em geração de energia solar no Brasil.
                         </p>
                         <p>
-                            Assim, além de sermos parceiros da WEG Solar, somos também <strong>integradores 5 estrelas</strong>, o que significa que garantimos, em nossos serviços, o que há de melhor em tecnologia solar WEG - assegurando qualidade e segurança aos sistemas fotovoltaicos dos nossos clientes.
+                            Assim, além de sermos parceiros da WEG Solar, somos também <strong>integradores 5
+                            estrelas</strong>, o que significa que garantimos, em nossos serviços, o que há de
+                            melhor em tecnologia solar WEG - assegurando qualidade e segurança aos sistemas
+                            fotovoltaicos dos nossos clientes.
                         </p>
+
+                        <a class="btn-default" target="_blank"
+                            href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+Gostaria+de+realizar+uma+simula%C3%A7%C3%A3o.">Ficou
+                            com alguma dúvida?</a>
+
                     </div>
 
                     <div class="img-tec">
-                        <img class="imagem-tec" src="./assets/img-tec.png" alt="">
+                        <img class="imagem-tec" src="./assets/img-tec.webp"
+                            alt="prédrio com placas fotovoltaicas de alta tecnológia">
                         <div class="elemento-2">
-                            <img src="./assets/elementor-2.png" alt="">
+                            <img src="./assets/elementor-2.svg" alt="elemento gráfico">
                         </div>
                     </div>
                 </div>
@@ -97,34 +171,55 @@
         </section>
 
         <section id="historia">
-            <div class="align-container">               
+            <div class="align-container">
                 <div class="container-historia">
                     <div class="text-historia">
                         <h2>NOSSAS HISTÓRIAS</h2>
-                       
+
                         <p>Conheça as histórias de sucesso de quem decidiu renovar e economizar</p>
                     </div>
 
                     <div class="story"></div>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                               <div class="container-swiper">
-                                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit distinctio maiores quaerat quisquam sunt unde excepturi, nobis ea doloremque? Quas perspiciatis expedita necessitatibus deleniti sequi cupiditate debitis cum corrupti sit. </p>
-                                    <img src="./assets/foto-historia-01.png" alt="">
-                               </div>
+                            <div class="swiper-slide">
+                                <div class="container-swiper">
+                                    <p>
+                                        <strong>Supermercado Redes Mais - Santa Cruz (RN)</strong><br><br>
+                                        Localizado na cidade de Santa Cruz (RN) o supermercado Rede Mais agora conta com
+                                        o maior sistema fotovoltaico da região. São 820 painéis que, juntos, contam com
+                                        uma potência de 282,9 kWp e assumem uma capacidade de geração de 34.372 kwh
+                                        (mensal) e economia anual de R$170.000,00.
+                                    </p>
+                                    <img src="./assets/foto-historia-01.webp"
+                                        alt="imagen da conclussão do cliente Supermercado Redes Mais">
+                                </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="container-swiper">
-                                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit distinctio maiores quaerat quisquam sunt unde excepturi, nobis ea doloremque? Quas perspiciatis expedita necessitatibus deleniti sequi cupiditate debitis cum corrupti sit. </p>
-                                    <img src="./assets/foto-historia-01.png" alt="">
-                               </div>
+                                    <p>
+                                        <strong>Atacarejo - Ceará Mirim (RN)</strong><br><br>
+                                        A economia e a sustentabilidade agora fazem parte da rotina administrativa do
+                                        supermercado LevaMais Atacarejo, localizado em Ceará Mirim (RN). Com 152 módulos
+                                        instalados, o seu sistema fotovoltaico conta com potência de 52,44 kWp e 6.371
+                                        kwh de geração elétrica mensal.
+                                    </p>
+                                    <img src="./assets/foto-historia-01.webp"
+                                        alt="imagen da conclussão do cliente Atacarejo">
+                                </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="container-swiper">
-                                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit distinctio maiores quaerat quisquam sunt unde excepturi, nobis ea doloremque? Quas perspiciatis expedita necessitatibus deleniti sequi cupiditate debitis cum corrupti sit. </p>
-                                    <img src="./assets/foto-historia-01.png" alt="">
-                               </div>
+                                    <p>
+                                        <strong>Caicó Frios - Parnamirim (RN)</strong><br><br>
+                                        A Caicó Frios, uma das maiores distribuidoras, varejistas e atacadistas do RN,
+                                        agora também conta com uma geração de energia sustentável e renovável. São 230
+                                        painéis instalados, com potência de 93,15 kWp e geração de 12.000 kwh
+                                        mensalmente.
+                                    </p>
+                                    <img src="./assets/foto-historia-01.webp"
+                                        alt="imagen da conclussão do cliente Caicó Frios">
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-button-next"></div>
@@ -138,31 +233,46 @@
 
         <section id="sobre">
             <div class="align-container">
-               
+
                 <div class="container-sobre">
                     <div class="text-sobre">
                         <h2>SOBRE</h2>
 
                         <p>
-                            O Grupo WSO surgiu em 1998 como uma empresa voltada para o setor de Tecnologia Multimídia. Porém, visando as mudanças apresentadas pelo promissor mercado de energia solar, o Grupo reformulou seu segmento de atuação e passou também a oferecer, desde 2018, serviços voltados à <strong>energia fotovoltaica</strong>.
+                            O Grupo WSO surgiu em 1998 como uma empresa voltada para o setor de Tecnologia Multimídia.
+                            Porém, visando as mudanças apresentadas pelo promissor mercado de energia solar, o Grupo
+                            reformulou seu segmento de atuação e passou também a oferecer, desde 2018, serviços voltados
+                            à <strong>energia fotovoltaica</strong>.
                         </p>
 
                         <p>
-                            Acreditamos que a energia solar é um dos caminhos para construir um futuro mais limpo e sustentável. Assim, a WSO Solar surge com o propósito de oferecer aos seus clientes uma alternativa renovável para geração de energia elétrica de forma autônoma, <strong>reduzindo custos de uma maneira sustentável</strong>.
+                            Acreditamos que a energia solar é um dos caminhos para construir um futuro mais limpo e
+                            sustentável. Assim, a WSO Solar surge com o propósito de oferecer aos seus clientes uma
+                            alternativa renovável para geração de energia elétrica de forma autônoma, <strong>reduzindo
+                                custos de uma maneira sustentável</strong>.
                         </p>
 
                         <p>
-                            Atualmente, atuamos em 3 estados, contando com mais 300 projetos realizados e distribuídos em 20 cidades. Além disso, operamos com um time multidisciplinar de colaboradores, que prestam um trabalho de excelência.
+                            Atualmente, atuamos em 3 estados, contando com mais 300 projetos realizados e distribuídos
+                            em 20 cidades. Além disso, operamos com um time multidisciplinar de colaboradores, que
+                            prestam um trabalho de excelência.
                         </p>
+
+                        <a class="btn-default" target="_blank"
+                            href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+Gostaria+de+realizar+uma+simula%C3%A7%C3%A3o.">Saiba
+                            mais sobre nosso trabalho</a>
+
                     </div>
 
                     <div class="img-sobre">
-                        <img src="./assets/img-sobre.png" alt="">
+                        <img src="./assets/img-sobre.webp"
+                            alt="reflexão sobre a historia da WSO Solar na energia renovavel">
                     </div>
                 </div>
             </div>
         </section>
 
+        <!--
         <section id="depoimentos">
             <div class="align-container">
                 <h2>DEPOIMENTOS</h2>
@@ -170,10 +280,9 @@
                 <div class="container-depoimentos">
 
                     <div class="img-depoimentos">
-                        <img src="./assets/aspas.png" alt="">
+                        <img src="./assets/aspas.svg" alt="diretamente falado pelos nossos clientes">
                     </div>
 
-                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -202,6 +311,7 @@
                 </div>
             </div>
         </section>
+        -->
 
     </main>
 
@@ -210,26 +320,25 @@
 
         <ul>
             <li>
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+venho+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es">
-                    <img src="./assets/icon-whatsapp.png" alt="Selecione para entrar em contato conosco via whatsapp">
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=5584999830108&text=Ol%C3%A1%2C+venho+pelo+site.+Gostaria+de+mais+informa%C3%A7%C3%B5es">
+                    <img src="./assets/icon-whatsapp.svg" alt="Selecione para entrar em contato conosco via whatsapp">
                     +55 (84) 9 9983-0108
                 </a>
             </li>
             <li>
                 <a href="tel:+558432114401">
-                    <img src="./assets/icon-telefone.png" alt="Selecione para entrar em contato conosco via telefone">
+                    <img src="./assets/icon-telefone.svg" alt="Selecione para entrar em contato conosco via telefone">
                     +55 (84) 3211-4401
                 </a>
             </li>
             <li>
-                <a target="_blank">
-                    <img src="./assets/icon-emil.png" alt="Entre en contato pelo nosso e-mail">
-                    wso@grupowso.com.br
-                </a>
+                <img src="./assets/icon-emil.svg" alt="Entre en contato pelo nosso e-mail">
+                wso@grupowso.com.Brasil
             </li>
             <li>
                 <a target="_blank" href="https://goo.gl/maps/nm32izmVogd2ywYV9">
-                    <img src="./assets/icon-pin.png" alt="Nosso endereços">
+                    <img src="./assets/icon-pin.svg" alt="Nosso endereços">
                     Rua dos Tororós, 1885 - Lagoa Nova, Natal - RN, 59054-550
                 </a>
             </li>
@@ -242,17 +351,18 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-      cssMode: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
     </script>
 </body>
+
 </html>

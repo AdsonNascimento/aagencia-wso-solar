@@ -22,7 +22,7 @@ html {
     font-size: 62.5%; /* tamanho padrão do navegador vira 10px*/
 }
 
-:root {
+:root main {
     --swiper-theme-color: var(--laranja-3);
 }
 
@@ -41,6 +41,33 @@ html {
 main,
 header {
     overflow-x: hidden;
+}
+
+.btn-default {
+    display: block;
+    background-image: linear-gradient(90deg, var(--laranja-2), var(--laranja-3));
+    color: var(--base);
+    border-radius: 10px;
+    font-size: 1.75rem;
+    padding: 1.5rem;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-flut {
+    background-image: linear-gradient(45deg, var(--laranja-1), var(--laranja-3));
+    position: fixed;
+    right: 3rem;
+    bottom: 4rem;
+    width: 7rem;
+    height: 7rem;
+    padding: 2rem;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header {
@@ -78,7 +105,7 @@ header {
 }
 
 #capa {
-    background-image: url("./assets/banner.png");
+    background-image: url("./assets/banner.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +153,7 @@ header {
     padding: 3rem 3rem 5rem 3rem;
 
     color: var(--laranja-4);
-    font-size: 2rem;
+    font-size: 2.75rem;
     font-weight: 600;
     text-align: center;
     
@@ -138,15 +165,9 @@ header {
     gap: 3rem;
 }
 
-#capa .card-capa a {
-    display: block;
+#capa .card-capa .btn-default {
     background-color: var(--laranja-4);
-    color: var(--base);
-    border-radius: 10px;
-    font-size: 1.4rem;
-    padding: 1.5rem;
-    width: 80%;
-    margin: auto;
+    background-image: none;
 }
 
 .align-container {
@@ -183,17 +204,22 @@ header {
     border-radius: 20px;
     color: var(--laranja-3);
     padding: 2rem;
-    max-height: 35rem;
+    max-height: 47rem;
     width: 25%;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 #servicos .item-service img {
-    width: 80%;
+    width: 50%;
+}
+
+#servicos .item-service h2 {
+    text-align: center;
 }
 
 #tec h2,
@@ -347,6 +373,8 @@ header {
     flex-direction: column;
     gap: 2rem;
     max-width: 40rem;
+    color: var(--base);
+    font-size: 2rem;
 }
 
 #contatos li a {
@@ -359,8 +387,13 @@ header {
     width: auto;
 }
 
-#contatos li a img {
+#contatos li a img,
+#contatos li img {
     width: 2rem;
+}
+
+#contatos li > img {
+    margin-right: 2rem;
 }
 
 @media (max-width: 1200px) {
@@ -434,7 +467,7 @@ header {
     }
 
     #capa .card-capa {
-        right: 5%;
+        right: 25%;
     }
 
     #capa .container-capa div {
@@ -511,6 +544,48 @@ header {
 }
 
 @media (max-width: 500px) {
+    #header img:nth-child(1) {
+        width: 15rem;
+    }
+    
+    #header img:nth-child(2) {
+        width: 10rem;
+    }
+
+    #header .elemento-1 {
+        top: -10rem;
+        max-width: 20rem;
+    }
+
+    #capa .card-capa {
+        right: 0;
+        width: 100vw;
+        padding: 2rem 1rem 3rem 1rem;
+    }
+
+    #capa .container-capa > p {
+        display: none;
+    }
+
+    #card .container-capa {
+        justify-content: flex-start;
+    }
+
+    #capa .container-capa div h1 {
+        font-size: 4rem;
+    }
+
+    #capa .container-capa div p {
+        font-size: 2.5rem;
+    }
+
+    #capa .container-capa div {
+        position: absolute;
+        left: 0%;
+        top: 15%;
+        padding: 0 2rem;
+    }
+
     #servicos .container-service {
         flex-direction: column;
         gap: 2rem;
